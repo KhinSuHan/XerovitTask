@@ -1,0 +1,17 @@
+.info-card {
+    background-color: lightblue;
+}
+
+.mainpage-content {
+    margin-top: 50px;
+}
+
+.contact-list {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.total-info {
+    color: lightblue;
+}

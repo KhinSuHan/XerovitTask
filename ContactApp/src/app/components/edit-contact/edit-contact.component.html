@@ -1,0 +1,57 @@
+<div class="container common-content">
+    <div class="card contact-form-card">
+        <div class="card-body">
+            <form [formGroup]="contactForm">
+                <h4 class="text-center">Edit contact</h4><br>
+
+                <div class="form-group row required">
+                    <label for="name" class="col-sm-2 col-form-label">Full Name</label>
+                    <div class="col-sm-10">
+                        <input [class.is-invalid]="name.invalid &&
+                        (name.dirty || name.touched)" type="text" class="form-control" id="name" placeholder="Name"
+                            formControlName="name">
+                        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-danger">
+                            <small *ngIf="name.errors.required">Full name is
+                                required.</small>
+                            <small *ngIf="name.errors.maxlength">You are exceeding maximum limit of 50
+                                characters.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row required">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input [class.is-invalid]="email.invalid &&
+                    (email.dirty || email.touched)" type="email" class="form-control" id="email" placeholder="Email"
+                            formControlName="email">
+                        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger">
+                            <small *ngIf="email.errors.required">Email is required.</small>
+                            <small *ngIf="email.errors.maxlength">You are exceeding maximum limit of 50
+                                characters.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row required">
+                    <label for="phone" class="col-sm-2 col-form-label">Telephone</label>
+                    <div class="col-sm-10">
+                        <input [class.is-invalid]="phone.invalid &&
+                    (phone.dirty || phone.touched)" type="tel" class="form-control" id="phone" placeholder="Telephone"
+                            formControlName="phone">
+                        <div *ngIf="phone.invalid && (phone.dirty || phone.touched)" class="text-danger">
+                            <small *ngIf="phone.errors.required">Phone is required.</small>
+                            <small *ngIf="phone.errors.maxlength">You are exceeding maximum limit of 50
+                                characters.</small>
+                        </div>
+                    </div>
+                </div><br>
+            </form>
+
+            <button [disabled]="contactForm.invalid" class="btn btn-success float-right"
+                (click)="openEditModal(contact.id)"><span class="fa fa-save pr-2"></span>Save</button>
+            <button routerLink="/mainPage/" class="btn btn-light float-right mr-3"><span
+                    class="fa fa-times pr-2"></span>Cancel</button>
+        </div>
+    </div>
+</div>

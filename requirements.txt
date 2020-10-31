@@ -1,0 +1,16 @@
+Note: Duplicate email and phone no validation in editForm is remaining.
+
+
+Versions
+========
+Angular CLI version: 8.3.19
+Node.js version: 14.4.0
+
+
+Installations
+=============
+npm install json-server
+npm install --save bootstrap
+npm i ng2-search-filter --saveCopys
+npm install --save @ng-bootstrap/ng-bootstrap
+ng add @angular/material

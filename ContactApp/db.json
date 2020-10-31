@@ -1,0 +1,34 @@
+{
+  "contacts": [
+    {
+      "name": "Adelyn",
+      "email": "adele@example.com",
+      "phone": "09-34534234",
+      "id": 1
+    },
+    {
+      "name": "Bryan",
+      "email": "bforbryan@example.com",
+      "phone": "09-4568458649",
+      "id": 2
+    },
+    {
+      "name": "Catherine",
+      "email": "cathy@example.com",
+      "phone": "01-123456",
+      "id": 3
+    },
+    {
+      "name": "David",
+      "email": "david@example.com",
+      "phone": "09-234234234",
+      "id": 4
+    },
+    {
+      "name": "Adam",
+      "email": "adam@example.com",
+      "phone": "09-34534534",
+      "id": 5
+    }
+  ]
+}
